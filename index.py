@@ -1,6 +1,14 @@
 data_mahasiswa = [
-  { 'nim': '2109116095', 'nama': 'Albygael Fahlevy', 'prodi': 'Sistem Informasi', 'semester': 3 },
+  { 'nim': '2109116123', 'nama': 'Albygael Rifal Nifansa', 'prodi': 'Sistem Informasi', 'semester': 3 },
   { 'nim': '2109116095', 'nama': 'Muhammad Novil Fahlevy', 'prodi': 'Sistem Informasi', 'semester': 2 },
+  { 'nim': '2109116222', 'nama': 'Rizki Perdana Putra', 'prodi': 'Sistem Informasi', 'semester': 1 },
+  { 'nim': '2109116111', 'nama': 'Fazry Suhada', 'prodi': 'Sistem Informasi', 'semester': 1 },
+  { 'nim': '2109116233', 'nama': 'Amelia Rizka', 'prodi': 'Sistem Informasi', 'semester': 5 },
+  { 'nim': '2109116456', 'nama': 'Chevin', 'prodi': 'Sistem Informasi', 'semester': 7 },
+  { 'nim': '2109116890', 'nama': 'Ibnu Praditya', 'prodi': 'Sistem Informasi', 'semester': 4 },
+  { 'nim': '2109116891', 'nama': 'Achmad Fauzan', 'prodi': 'Sistem Informasi', 'semester': 2 },
+  { 'nim': '2109116895', 'nama': 'Romy Hakim', 'prodi': 'Sistem Informasi', 'semester': 6 },
+  { 'nim': '2109116444', 'nama': 'Wahyu Kesuma', 'prodi': 'Sistem Informasi', 'semester': 3 },
 ]
 
 kata_kunci_pencarian = ''
@@ -63,7 +71,7 @@ def pilih_kolom_yang_ingin_diurutkan() :
   print('[3] Program Studi')
   print('[4] Semester')
 
-  return int(input('Pilih kolom yang ingin diurutkan: ')) - 1
+  return int(input('Pilih kolom yang ingin diurutkan:\n> ')) - 1
 
 def menu_cari_mahasiswa() :
   global kata_kunci_pencarian, index_kolom
@@ -107,7 +115,7 @@ def pilih_menu() :
   print('[2] Cari mahasiswa')
   print('[3] Keluar')
 
-  return input('Pilih menu: ')
+  return input('Pilih menu:\n> ')
 
 # Fungsi utama
 def app(show_title=False) :
